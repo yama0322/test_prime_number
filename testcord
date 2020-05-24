@@ -11,8 +11,10 @@ int main()
 	number=3;
 
 	//素数かどうかを判定
-	for (i = 2; i < number; ++i) {
-		if (number % i == 0) {
+	for (i = 2; i < number; ++i) 
+	{
+		if (number % i == 0) 
+		{
 			flag = 1;
 			break;
 		}
