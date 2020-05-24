@@ -1,1 +1,29 @@
+#include<iostream>
+using namespace std;
 
+int main()
+{
+	int i, number;
+
+	//素数判定のフラグ
+	int flag = 0;
+
+	//数の入力
+	cout << "数を入力---" << flush;
+	cin >> number;
+
+	//素数かどうかを判定
+	for (i = 2; i < number; ++i) {
+		if (number % i == 0) {
+			flag = 1;
+			break;
+		}
+	}
+
+	//フラグが0なら素数
+	if (flag == 0)
+		cout << number << "は素数です。" << endl;
+	else
+		cout << number << "は素数ではありません。" << endl;
+
+} 
